@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <style>
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px dashed blue;
+}
+.video {
+    min-height: 6rem;
+    border: 1px dashed red;
+}
+.video:nth-child(4n),
+.video:nth-child(5n),
+.video:nth-child(6n) {
+    min-height: 3rem;
+    border: 1px dashed orange;
+}
+
+  </style>
+
+    <!-- <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Animations</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./animation.html">Service</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    
+    <p>
+        Lagrangian trajectories in doubly periodic domain of Rossby waves with weak divergence
+    </p>
+
+
+
+  <div class="videos">
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta0.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta01.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma01delta0.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma01delta01.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma01delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma1delta0.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma1delta01.mp4" type="video/mp4">
+      </video> 
+      <div class="video">
+        <video width="320" height="240" controls>
+          <source src="animations/gamma1delta1.mp4" type="video/mp4">
+        </video> 
+        
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>
