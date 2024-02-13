@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px dashed blue;
+}
+.video {
+    min-height: 6rem;
+    border: 1px dashed red;
+}
+.video:nth-child(4n),
+.video:nth-child(5n),
+.video:nth-child(6n) {
+    min-height: 3rem;
+    border: 1px dashed orange;
+}
+
+  </style>
+
     <!-- <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
@@ -19,6 +40,39 @@
     </p>
 
 
+
+  <div class="videos">
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+    <div class="video">
+      <video width="320" height="240" controls>
+        <source src="animations/gamma0delta1.mp4" type="video/mp4">
+      </video> 
+
+    </div>
+  </div>
 
     <figure>
     <video width="320" height="240" controls>
